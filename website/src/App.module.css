@@ -1,0 +1,12 @@
+/* App.module.css */
+.layout{
+  display: flex;
+  flex-direction: column;
+  min-height: 98.3vh;
+}
+.container{
+  margin: 5px;
+}
+.main{
+  flex: 1;
+}

@@ -1,0 +1,252 @@
+a {
+    text-decoration: none;
+}
+
+.videoContainer {
+    position: relative;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.videoElement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects,
+.achiever {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h2,
+.achiever h2,
+.map h2 {
+    font-size: 3vw;
+    margin: 20px 0px;
+    line-height: 1.3em;
+    font-weight: bold;
+    color: #202f7c;
+}
+
+.achiever h1,
+.map h1 {
+    font-size: 7vw;
+    margin: 20px 0px;
+    line-height: 1.3em;
+    font-weight: bold;
+    color: #202f7c;
+}
+
+.projectImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projectImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projectImage a {
+    text-decoration: none;
+}
+
+.projectImage p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+.teamImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.teamImage img {
+    max-width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.teamImage p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+.teamImage a {
+    text-decoration: none;
+    color: #333;
+}
+
+.teamImage a:hover {
+    color: #000;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.achiever h2 {
+    margin-top: 30px;
+}
+
+.teams {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapIframe {
+    width: 95%;
+}
+
+.whatsapp {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #202f7c;
+    width: 98vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid yellow;
+
+}
+
+.whatsapp h2 {
+    color: aliceblue;
+}
+
+.whatsapp img {
+    border-radius: 15px;
+}
+
+.whatsappContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: aliceblue;
+    width: 23%;
+    border-radius: 15px;
+    border: 2px solid #0d6efd;
+}
+
+.colDiv h3{
+    margin-top: 10px;
+}
+
+.content {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 90vw;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.8;
+    font-size: 1rem;
+    text-align: justify;
+    transition: all 0.3s ease;
+  }
+  
+  .content:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content p {
+    margin: 0;
+  }
+  
+
+@media screen and (max-width: 768px) {
+
+    .projects h2,
+    .achiever h2,
+    .map h2 {
+        font-size: 3vh;
+    }
+
+    .achiever h1,
+    .map h1 {
+        font-size: 5vh;
+    }
+
+    .teams {
+        flex-direction: column;
+    }
+
+    .rowDiv{
+        flex-direction: column;
+    }
+
+    .colDiv{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .whatsapp {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .whatsapp img {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .whatsappContent h2 {
+        font-size: 15px;
+    }
+}
