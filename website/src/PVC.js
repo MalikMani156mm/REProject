@@ -1,9 +1,40 @@
 import React from 'react';
 import styles from './Home.module.css';
 import pvcPic from './images/pvcPic.jpeg';
-
+import pvcPic1 from './images/pvcPic1.jpeg';
+import pvcPic2 from './images/pvcPic2.jpeg';
+import pvcPic3 from './images/pvcPic3.jpeg';
+import pvcPic4 from './images/pvcPic4.jpeg';
+import pvcPic5 from './images/pvcPic5.jpeg';
+import pvcPic6 from './images/pvcPic6.jpeg';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const PVC = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 992, // tablets
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 768, // mobile
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    };
     return (
         <>
             <div className={styles.achiever}>
@@ -19,11 +50,43 @@ const PVC = () => {
                     What We Offers!
                 </h2>
             </div>
-            <div className={styles.projectImage}>
-                <div>
-                    <img src={pvcPic} alt="blueworldcity pic1 unload" width={400} height={450} />
+            <Slider {...settings}>
+                <div className={styles.projectImage}>
+                    <div>
+                        <img src={pvcPic} alt="blueworldcity pic1 unload" width={400} height={450} />
+                    </div>
                 </div>
-            </div>
+                <div className={styles.projectImage}>
+                    <div>
+                        <img src={pvcPic1} alt="blueworldcity pic1 unload" width={400} height={450} />
+                    </div>
+                </div>
+                <div className={styles.projectImage}>
+                    <div>
+                        <img src={pvcPic2} alt="blueworldcity pic1 unload" width={400} height={450} />
+                    </div>
+                </div>
+                <div className={styles.projectImage}>
+                    <div>
+                        <img src={pvcPic3} alt="blueworldcity pic1 unload" width={400} height={450} />
+                    </div>
+                </div>
+                <div className={styles.projectImage}>
+                    <div>
+                        <img src={pvcPic4} alt="blueworldcity pic1 unload" width={400} height={450} />
+                    </div>
+                </div>
+                <div className={styles.projectImage}>
+                    <div>
+                        <img src={pvcPic5} alt="blueworldcity pic1 unload" width={400} height={450} />
+                    </div>
+                </div>
+                <div className={styles.projectImage}>
+                    <div>
+                        <img src={pvcPic6} alt="blueworldcity pic1 unload" width={400} height={450} />
+                    </div>
+                </div>
+            </Slider>
         </>
     )
 }

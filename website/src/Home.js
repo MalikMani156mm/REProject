@@ -11,6 +11,7 @@ import parkviewcity from './images/parkviewcity.jpeg';
 import lakeshore from './images/lakeshore.jpeg';
 import blue from './images/blue.jpeg';
 import zameen from './images/zameen.jpeg';
+import park from './images/parkCert.jpeg';
 import ceo from './images/ceo.jpeg';
 import female from './images/female.jpg';
 import Reviews from './Reviews.js';
@@ -94,14 +95,17 @@ function Home() {
       <Slider {...settings}>
         <div className={styles.projectImage}>
           <div>
-            <img src={zameen} alt="blueworldcity certificate unload" width={400} height={450} />
+            <img src={zameen} alt="zameen.com certificate unload" width={400} height={450} />
           </div>
         </div>
         <div className={styles.projectImage}>
-          <img src={lakeshore} alt="lakeshore certificate unload" width={400} height={450} />
+          <img src={blue} alt="blueworldcity certificate unload" width={400} height={450} />
         </div>
         <div className={styles.projectImage}>
-          <img src={blue} alt="blueworldcity certificate unload" width={400} height={450} />
+          <img src={park} alt="park view city certificate unload" width={400} height={450} />
+        </div>
+        <div className={styles.projectImage}>
+          <img src={lakeshore} alt="lakeshore certificate unload" width={400} height={450} />
         </div>
       </Slider>
       <div className={styles.achiever}>

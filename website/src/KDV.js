@@ -47,7 +47,7 @@ const KDV = () => {
                 </h2>
             </div>
             <Slider {...settings}>
-            <div className={styles.projectImage}>
+                <div className={styles.projectImage}>
                     <div>
                         <img src={kpic2} alt="blueworldcity pic1 unload" width={400} height={450} />
                     </div>
